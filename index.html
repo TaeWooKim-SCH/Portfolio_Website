@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Taewoo's Portfolio</title>
-    <meta 
-        name = "description"
-        content = "Taewoo"
-    >
+    <title>Taewoo's Portfol
+        io</title>
+    <meta name = "description" content = "Taewoo">
     <meta name = "author" content = "Taewoo">
     <link rel = "icon" type = "image/png" href = "imgs/favicon.png">
     <script src="https://kit.fontawesome.com/84c89ddcbb.js" crossorigin="anonymous"></script>
@@ -18,6 +16,169 @@
     <script src = "main.js" defer></script>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav id = "navbar">
+        <div class="navbar__logo">
+            <i class="fab fa-diaspora"></i>
+            <a href = "#">Taewoo</a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">Home</li>
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Skills</li>
+            <li class="navbar__menu__item">My work</li>
+            <li class="navbar__menu__item">Testimonial</li>
+            <li class="navbar__menu__item">Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id = "home">
+        <img src = "imgs/profile.jpg" 
+             alt = "Taewoo's profile photo" 
+             class = "home__avatar"
+        >
+        <h1 class="home__title">Hello, <br>I'm Clean Coder</h1>
+        <h2 class="home__description">To become the best full stack developer.</h2>
+        <button class="home__contact">Contact Me</button>
+    </section>
+
+    <!-- about -->
+    <section id = "about">
+        <h1>About me</h1>
+        <p>
+            My major is data analysis. However, I found coding fun while analyzing data. 
+            So I started developing the web, the flower of development. 
+            It started with the most basic front-end development among web developments. 
+            After studying the front end, I will study the back-end.
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="major__title">Front-end</div>
+                <div class="major__desccription">
+                    HTML, CSS, JavaScript
+                </div>
+            </div>
+
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="major__title">Data analysis</div>
+                <div class="major__desccription">
+                    Python, Pandas, Numpy
+                </div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="imgs/jobs/logo.png" 
+                     alt="soonchunhyang" 
+                     class="job__logo"
+                >
+                <p class="job__name">Entrance to Soonchunhyang University</p>
+                <p class="job__period">2021.3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id = "skills">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+            I'm interested in the whole area of development. 
+            I am interested in the field of web development now, 
+            but I will study artificial intelligence and back-end using my major later.
+        </p>
+        <div class="skillset">
+            <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>HTMl</span>
+                        <span>99%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>CSS</span>
+                        <span>79%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>JavaScript</span>
+                        <span>59%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>Python</span>
+                        <span>89%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>Java</span>
+                        <span>19%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skillset__right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools_list">
+                        <li><span>Visual Studio Code</span></li>
+                        <li><span>Eclips</span></li>
+                        <li><span>R Studio</span></li>
+                        <li><span></span>Anaconda</li>
+                    </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">Etc</h3>
+                    <ul class="etc__list">
+                        <li><span>Git</span></li>
+                        <li><span>Github</span></li>
+                        <li><span>Notion</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id = "work">
+        <h1
+    </section>
+    <!-- Testimonials -->
+    <section id = "testimonials"></section>
+    <!-- Contact -->
+    <section id = "contact"></section>
     
 </body>
 </html>
