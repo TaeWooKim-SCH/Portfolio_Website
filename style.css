@@ -60,6 +60,11 @@ button {
     outline: none;
 }
 
+/* .navbar__logo a::before {
+    content: "f5d3";
+    font: var(fa-solid fa-atom-simple)
+} */
+
 
 /* Typography */
 h1 {
@@ -88,10 +93,10 @@ h3 {
 #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
+    background-color: #364A73;
     align-items: center;
     color: var(--color-white);
-    padding: 16px;
+    padding: 0 16px;
 }
 
 .navbar__logo {
@@ -115,14 +120,16 @@ h3 {
 }
 
 .navbar__menu__item:hover {
-    background-color: var(--color-dark-pink);
+    /* background-color: var(--color-dark-pink); */
+    background-color: #64758C;
     border-radius: var(--size-border-radius);
+    transition: var(--animation-duration) ease-in;
 }
 
 
 /* Home */
 #home {
-    background: url('imgs/home-background.png') center/cover no-repeat;
+    background: url('imgs/home-background_4.jpg') center/cover no-repeat;
     padding: 40px;
     text-align: center;
 }
@@ -136,6 +143,7 @@ h3 {
 
 .home__title, .home__description {
     color: var(--color-white);
+    /* color: #7E98A6; */
 }
 
 .home__contact {
