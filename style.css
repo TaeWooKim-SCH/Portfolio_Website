@@ -97,7 +97,7 @@ h3 {
     background-color: #707A9D;
     align-items: center;
     color: var(--color-white);
-    padding: 0 16px;
+    padding: 8px 24px;
 }
 
 .navbar__logo {
@@ -122,9 +122,18 @@ h3 {
 
 .navbar__menu__item:hover {
     /* background-color: var(--color-dark-pink); */
-    background-color: #64758C;
+    background-color: #5d779b;
     border-radius: var(--size-border-radius);
     transition: var(--animation-duration) ease-in;
+}
+
+.navbar__toggle-btn {
+    position: absolute;
+    top: 14px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
 }
 
 
@@ -175,7 +184,7 @@ h3 {
 .about__majors {
     display: flex;
     justify-content: space-around;
-    margin: 80px 0;
+    margin: 70px 0;
 }
 
 .major__icon{
@@ -203,7 +212,8 @@ h3 {
 }
 
 .major__icon:hover i {
-    color: var(--color-pink);
+    /* color: var(--color-pink); */
+    color: #274774;
     transform: rotate(-30deg) scale(1.1);
 }
 
@@ -339,7 +349,7 @@ h3 {
 .project {
     position: relative;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     width: 280px;
     height: 250px;
@@ -457,4 +467,45 @@ h3 {
     transform: scale(1.1);
     color: var(--color-yellow);
     transition: all var(--animation-duration);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
+        display: block;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+
+    .about__majors {
+        flex-direction: column;
+    }
+    .major {
+        margin-bottom: 60px;
+    }
+
+
+    .skillset {
+        flex-direction: column;
+    }
+
+
+    .project {
+        flex-grow: 1;
+    }
+
+
+    .testimonial__avatar {
+        width: 80px;
+        height: 80px;
+    }
 }
