@@ -43,6 +43,18 @@ body {
     cursor: default;
 }
 
+body::-webkit-scrollbar {
+    background-color: #0A041C;
+    width: 15px;
+    opacity: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #747593;
+    border-radius: 10px;
+}
+
+
 a {
     text-decoration: none;
     color: var(--color-white);
@@ -94,10 +106,10 @@ h3 {
     position: fixed;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     /* background-color: #364A73; */
     background-color: transparent;
-    align-items: center;
     color: var(--color-white);
     padding: 0px 24px;
     transition: all 0.5s ease-in-out;
@@ -152,6 +164,7 @@ h3 {
     padding: 40px;
     padding-top: 100px;
     text-align: center;
+    height: 800px;
 }
 
 .home__avatar {
@@ -191,9 +204,17 @@ h3 {
 
 
 /* About */
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    /* padding: 100px; */
+}
 .about__majors {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 70px 0;
 }
 
@@ -259,6 +280,7 @@ h3 {
 #skills {
     /* background-color: var(--color-yellow); */
     background: linear-gradient(to bottom, #435373c0, #22009ecb);
+    height: 800px;
 }
 
 .skillset {
@@ -316,6 +338,7 @@ h3 {
 /* Work */
 #work {
     background: linear-gradient(to bottom, white, var(--color-light-white));
+    height: 800px
 }
 
 .work__categories {
@@ -327,6 +350,7 @@ h3 {
     border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 8px 48px;
+    margin: 10px 2px;
 }
 
 .category__btn.active, .category__count,
@@ -417,6 +441,7 @@ h3 {
 /* Testimonial */
 #testimonials {
     background-color: var(--color-light-white);
+    height: 800px;
 }
 
 .testimonials {
@@ -454,7 +479,7 @@ h3 {
 }
 
 .testimonial__speech-bubble a {
-    color: var(--color-pink);
+    color: black;
 }
 
 
@@ -462,6 +487,10 @@ h3 {
 #contact {
     background-color: var(--color-pink);
     background: linear-gradient(to bottom, var(--color-light-white), rgba(16, 0, 110, 0.562));
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .comtact__title,
@@ -487,13 +516,18 @@ h3 {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+    /* Navbar */
+    #navbar {
+        height: 70px;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
     .navbar__toggle-btn {
+        margin-top: 10px;
         display: block;
     }
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
     .navbar__menu {
         flex-direction: column;
         text-align: center;
@@ -502,14 +536,33 @@ h3 {
     }
 
 
-    .about__majors {
+
+    /* Home */
+    #home {
+        display: flex;
         flex-direction: column;
-    }
-    .major {
-        margin-bottom: 60px;
+        justify-content: center;
+        align-items: center;
     }
 
 
+    /* About Me */
+    #about{
+        height: 1300px;
+    }
+        .about__majors {
+            flex-direction: column;
+        }
+        .major {
+            margin-bottom: 60px;
+        }
+
+
+
+    /* Skills */
+    #skills {
+        height: 1100px;
+    }
     .skillset {
         flex-direction: column;
     }
