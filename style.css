@@ -105,6 +105,7 @@ h3 {
 
 #navbar.navbar--dark {
     background-color: #04012C;
+    z-index: 1;
 }
 
 .navbar__logo {
@@ -129,7 +130,7 @@ h3 {
 
 .navbar__menu__item:hover {
     /* background-color: var(--color-dark-pink); */
-    background-color: #5d779b;
+    background-color: #453f9b;
     border-radius: var(--size-border-radius);
     transition: var(--animation-duration) ease-in;
 }
@@ -142,6 +143,7 @@ h3 {
     color: var(--color-white);
     display: none;
 }
+
 
 
 /* Home */
@@ -255,7 +257,8 @@ h3 {
 
 /* Skill */
 #skills {
-    background-color: var(--color-yellow);
+    /* background-color: var(--color-yellow); */
+    background: linear-gradient(to bottom, #435373c0, #22009ecb);
 }
 
 .skillset {
@@ -311,6 +314,10 @@ h3 {
 
 
 /* Work */
+#work {
+    background: linear-gradient(to bottom, white, var(--color-light-white));
+}
+
 .work__categories {
     margin: 40px;
 }
@@ -329,12 +336,12 @@ h3 {
 }
 
 .category__btn.active, .category__btn:hover {
-    background-color: var(--color-pink);
+    background-color: #453f9b;
     color: var(--color-white);
 }
 
 .category__count {
-    background-color: var(--color-orange);
+    background-color: #8680da;
     border-radius: 50%;
     color: var(--color-white);
     width: 24px;
@@ -454,6 +461,7 @@ h3 {
 /* Contact */
 #contact {
     background-color: var(--color-pink);
+    background: linear-gradient(to bottom, var(--color-light-white), rgba(16, 0, 110, 0.562));
 }
 
 .comtact__title,
